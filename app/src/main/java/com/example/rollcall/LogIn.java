@@ -31,13 +31,13 @@ public class LogIn extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
-                    Toast.makeText(LogIn.this, "Log in successful", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LogIn.this, "Log in successful", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(view.getContext(), MainActivity3.class);
                     startActivity(i);
 
                 }
                 else{
-                    Toast.makeText(LogIn.this, "Incorrect password or username", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LogIn.this, "Incorrect password or username", Toast.LENGTH_SHORT).show();
 
                 }
             }
